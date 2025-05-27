@@ -1,0 +1,50 @@
+.container {
+    max-width: 960px;
+    background-color: rgb(252, 249, 245);
+  }
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .Checkoutimages
+  {
+   width:60px;
+   height:50px;
+   margin-bottom: 10px;
+  }
+ .btn
+ {
+  background-color: rgb(141, 94, 38);
+  color: white;
+ }
+ .btn:hover
+ {
+  background-color: rgb(100, 65, 23);
+  color: white;
+ }
+ .carttext
+ {
+  color: rgb(141, 94, 38);
+ }
+ .spanbg
+ {
+  background-color:  rgb(141, 94, 38);
+  color:white;
+ }
+ body
+ {
+  background-color: rgb(252, 249, 245);
+ }
+ .Billing
+ {
+  color:  rgb(141, 94, 38);
+ }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Products</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ManageProduct.css">
+  <link rel="stylesheet" href="SallerDashbord.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="CheckUserRole.js"></script>
+  <script src="ManageProduct.js" defer ></script>
+</head>
+<body>
+    <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="../image/logo3.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="SallerDashbord.html" class="nav-link">Dashboard Home</a></li>
+      <li><a href="ManageProduct.html" class="nav-link">Manage Products</a></li>
+      <li><a href="ManageOrders.html" class="nav-link">Manage Orders</a></li>
+      <li><a href="SalesAnalytics.html" class="nav-link">Sales Analytics</a></li>
+      <li><a href="AccountSettings.html" class="nav-link">Account Settings</a></li>
+    </ul>
+    <div class="footer">
+      <p>&copy; 2024 Dashboard</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar-custom">
+    <button class="toggle-btn" id="toggle-btn">☰</button>
+    <h5>Welcome, Seller</h5>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <button id="show-form-btn" class="btn btn-primary my-3">Add Product</button>
+      
+      <!-- Product List Table -->
+      <h3>Product List</h3>
+      <table class="table table-bordered" id="product-table">
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Fragrances</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="product-list">
+          <!-- Products will be listed here -->
+        </tbody>
+      </table>
+      
+      <!-- Add Product Form -->
+      <div id="popup-form-container" class="popup-form-container">
+        <div class="popup-form">
+          <button class="close-popup-btn" id="close-popup-btn">&times;</button>
+          <h3 id="form-header">Add Product</h3>
+          <form id="add-product-form">
+            <div class="mb-3">
+              <label for="product-name" class="form-label">Product Name</label>
+              <input type="text" class="form-control" id="product-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="product-price" class="form-label">Product Price</label>
+              <input type="number" class="form-control" id="product-price" min="1" required>
+            </div>
+            <div class="mb-3">
+              <label for="product-img" class="form-label">Product Image</label>
+              <input type="file" class="form-control" id="product-img">
+            </div>
+            <div class="mb-3">
+                <label for="product-category" class="form-label">Fragrances Type</label>
+                <select class="form-control" id="product-category" required>
+                  <option value="" disabled selected>Select Fragrances</option>
+                  <option value="For Him">For Him</option>
+                  <option value="For Her">For Her</option>
+                </select>
+              </div>
+            <div class="mb-3">
+              <label for="product-quantity" class="form-label">Quantity</label>
+              <input type="number" class="form-control" id="product-quantity" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="product-submit">Add Product</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>

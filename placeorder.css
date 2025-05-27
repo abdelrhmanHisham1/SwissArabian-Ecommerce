@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:rgb(252, 249, 245);;
+}
+h1 {
+    text-align: center;
+}
+.btn1
+{
+    background-color: rgb(141, 94, 38);
+    color: white;
+}
+.btn1:hover
+{
+    background-color: rgb(100, 65, 23);
+    color: white;
+}

@@ -1,0 +1,21 @@
+
+  .Checkoutimages
+  {
+   width:80px;
+   height:80px;
+   margin-bottom: 10px;
+  }
+  .carttext
+ {
+  color: rgb(141, 94, 38);
+  font-size: 30px;
+ }
+ .spanbg
+ {
+  background-color:  rgb(141, 94, 38);
+  color:white;
+ }
+ body
+ {
+  background-color: rgb(252, 249, 245);
+ }

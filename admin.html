@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard Overview</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="../image/logo3.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="admin.html" class="nav-link">Dashboard Overview</a></li>
+      <li><a href="ManageUsers.html" class="nav-link">Manage Users</a></li>
+      <li><a href="ManageSellers.html" class="nav-link">Manage Sellers</a></li>
+      <li><a href="AdminManageProduct.html" class="nav-link">Manage Products</a></li>
+      <li><a href="customerservice.html" class="nav-link">Customer Service</a></li>
+      <li><a href="AddAdmins.html" class="nav-link">Add New Admins</a></li>
+      <li><a class="nav-link" id="logout">Logout</a></li>
+    </ul>
+    <div class="footer">
+      <p>&copy; 2024 Admin Dashboard</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar-custom">
+    <button class="toggle-btn" id="toggle-btn">☰</button>
+    <h5>Welcome, Admin</h5>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="grid-container">
+      <div class="grid-item">
+        <h5>Total Users</h5>
+        <p id="total-users">0</p>
+      </div>
+      <div class="grid-item">
+        <h5>Pending Sellers</h5>
+        <p id="pending-sellers">0</p>
+      </div>
+      <div class="grid-item">
+        <h5>Completed Orders</h5>
+        <p id="completed-orders">0</p>
+      </div>
+      <div class="grid-item">
+        <h5>Daily Signups</h5>
+        <p id="daily-signups">0</p>
+      </div>
+      <div class="grid-item d-grid justify-content-center align-items-center">
+        <h3>Customer VS Seller</h3>
+        <canvas id="registrations-chart"></canvas>
+      </div>
+      <div class="grid-item d-grid justify-content-center align-items-center">
+        <h3>Sales Performance</h3>
+        <canvas id="sales-performance-chart"></canvas>
+    </div>
+    <div class="grid-item d-grid justify-content-center align-items-center">
+      <h3>Order Status</h3>
+        <canvas id="order-status-chart"></canvas>
+    </div>
+    <div class="grid-item d-grid justify-content-center align-items-center">
+      <h3>Top Products</h3>
+        <canvas id="top-products-chart"></canvas>
+    </div>
+    
+    </div>
+  </div>
+</body>
+</html>

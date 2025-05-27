@@ -1,0 +1,105 @@
+:root {
+  --primary-color: rgb(252, 249, 245);
+  --secondary-color: black;
+  --tertiary-color: rgb(81, 52, 17);
+  --tertiary-hover:	rgb(141, 94, 38);
+  --font-family: monospace
+}
+#product-table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #product-table th, #product-table td {
+    text-align: center;
+  }
+  
+  #product-table .product-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  /* Form and Button Styles */
+  #add-product-form-container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #show-form-btn {
+    margin-top: 20px;
+  }
+  
+  #product-table .actions-btns button {
+    margin: 0 5px;
+  }
+  .popup-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-form {
+    background:#ffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .close-popup-btn:hover {
+    color: red;
+  }
+  
+  .popup-form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .popup-form .form-label {
+    font-weight: bold;
+    color: #4a4949;
+  }
+  
+  .popup-form .btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

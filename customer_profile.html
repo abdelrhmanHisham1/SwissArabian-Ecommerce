@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Profile - Swiss Arabian</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<header>
+    <h1>Your Profile</h1>
+    <nav>
+        <a href="/landscape/landscape.html">Home</a>
+        <a href="index.html" id="logoutButton">Logout</a>
+        <a href="OrderHistory.html">Your Orders</a>
+        
+    </nav>
+</header>
+<main>
+    <section class="profile-container">
+        <h2>Your profile details</h2>
+        <form id="profileForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" disabled>
+        
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address">
+        
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+        
+            <label for="password">New Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter new password">
+        
+            <label for="confirmPassword">Confirm New Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter new password">
+        
+            <button type="submit">Update Profile</button>
+        
+            <div id="errorMessages" class="error-messages"></div>
+        </form>
+        
+    </section>
+</main>
+<script src="customer_profile.js"></script>
+</body>
+</html>

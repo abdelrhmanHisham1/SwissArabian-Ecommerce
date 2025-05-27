@@ -1,0 +1,16 @@
+.addtocart
+{
+    background-color:  rgb(141, 94, 38);
+  color:white;
+}
+.addtocart:hover
+ {
+  background-color: rgb(100, 65, 23);
+  color: white;
+ }
+ .clickable
+ {
+width :70%;
+height:  40vh;
+cursor: pointer;
+ }

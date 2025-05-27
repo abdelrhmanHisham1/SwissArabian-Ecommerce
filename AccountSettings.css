@@ -1,0 +1,159 @@
+/* Main Content Styling */
+:root {
+    --primary-color: rgb(252, 249, 245);
+    --secondary-color: black;
+    --tertiary-color: rgb(81, 52, 17);
+    --tertiary-hover: rgb(141, 94, 38);
+}
+/* Form Container */
+form {
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Header */
+form::before {
+    content: "Seller Profile";
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--tertiary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* Form Label */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--tertiary-color);
+}
+
+/* Form Inputs */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus {
+    border-color: var(--secondary-color);
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+    outline: none;
+}
+
+form input:disabled {
+    background-color: #f2f2f2;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Form Button */
+form button {
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out,transform 1s;
+}
+
+form button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+}
+
+/* Error Messages */
+.error-messages {
+    color: #d9534f;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+/* alert */
+/* Cool Alert Styles */
+.cool-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .cool-alert-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: slide-down 0.5s ease-out;
+  }
+  
+  .cool-alert-content h2 {
+    font-size: 1.8rem;
+    color: var(--tertiary-color);
+    margin-bottom: 10px;
+  }
+  
+  .cool-alert-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .cool-alert-content button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--tertiary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s;
+  }
+  
+  .cool-alert-content button:hover {
+    background-color: var(--tertiary-hover);
+    transform: scale(1.05);
+  }
+
+  .button-group {
+    display: flex;
+    gap: 10px; /* Adds space between the buttons */
+    justify-content: center; /* Centers the buttons horizontally */
+    margin-top: 20px; /* Adds space above the button group */
+}
+  
+  /* Slide Down Animation */
+  @keyframes slide-down {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

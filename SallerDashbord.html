@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiss Arabian</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="SallerDashbord.css">
+  <script src="SallerDashbord.js" defer ></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="CheckUserRole.js"></script>
+    
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="../image/logo3.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="SallerDashbord.html" class="nav-link">Dashboard Home</a></li>
+      <li><a href="ManageProduct.html" class="nav-link">Manage Products</a></li>
+      <li><a href="ManageOrders.html" class="nav-link">Manage Orders</a></li>
+      <li><a href="SalesAnalytics.html" class="nav-link">Sales Analytics</a></li>
+      <li><a href="AccountSettings.html" class="nav-link">Account Settings</a></li>
+    </ul>
+    <div class="footer">
+      <p>&copy; 2024 Dashboard</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar-custom">
+    <button class="toggle-btn" id="toggle-btn">☰</button>
+    <h5>Welcome, Seller</h5>
+  </div>
+
+  <!-- Main Content -->
+<div class="main-content">
+  <div class="grid-container">
+    <div class="grid-item">
+      <h5>Total Products</h5>
+      <p></p>
+    </div>
+    <div class="grid-item">
+      <h5>Total Orders</h5>
+      <p></p>
+    </div>
+    <div class="grid-item">
+      <h5>Sales Analytics</h5>
+      <p></p>
+    </div>
+    <div class="grid-item">
+      <h5>Pending Orders</h5>
+      <p></p>
+    </div>
+    <!-- Best Seller (taking full width) -->
+    <div class="grid-item full-width">
+      <h3>Best Seller</h3>
+      <div class="best-seller-card">
+        <img id="best-seller-image" src="" alt="Best Seller">
+        <div>
+          <h5 id="best-seller-name"></h5>
+          <p id="best-seller-sales"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+</body>
+</html>

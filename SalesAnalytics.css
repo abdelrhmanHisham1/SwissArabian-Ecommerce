@@ -1,0 +1,76 @@
+:root {
+    --primary-color: rgb(252, 249, 245);
+    --secondary-color: black;
+    --tertiary-color: rgb(81, 52, 17);
+    --tertiary-hover: rgb(141, 94, 38);
+    --font-family: "Arial", sans-serif;
+    --chart-bg-color: rgba(81, 52, 17, 0.1);
+    --chart-border-color: rgba(81, 52, 17, 1);
+    --button-bg: rgba(81, 52, 17, 0.9);
+    --button-hover-bg: rgba(141, 94, 38, 0.9);
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+.main-content {
+    margin-top: 60px;
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+    color: var(--secondary-color);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.chart-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.chart-container:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--tertiary-color) -3px -3px 8px inset;
+}
+
+.chart-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--tertiary-color);
+}
+
+/* Ensure charts are responsive */
+.chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Make charts more visually appealing */
+.chart-container {
+    background: var(--chart-bg-color);
+    border: 1px solid var(--chart-border-color);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr; 
+    }
+}

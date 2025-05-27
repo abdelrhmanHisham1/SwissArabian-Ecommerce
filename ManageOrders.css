@@ -1,0 +1,84 @@
+/* General Styles */
+:root {
+    --primary-color: rgb(252, 249, 245);
+    --secondary-color: black;
+    --tertiary-color: rgb(81, 52, 17);
+    --tertiary-hover: rgb(141, 94, 38);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+#order-table td:nth-child(2),
+#order-table td:nth-child(3) {
+    text-align: left;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status.pending {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.status.shipped {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+button.update {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.update:hover {
+    background-color:var(--tertiary-hover);
+}
+
+/* Content Styles */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.update.shipped {
+    background-color: #ccc;
+    color: #666;
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+.update.shipped:hover
+{
+    background-color: rgba(255, 0, 0, 0.326);
+}
+
+

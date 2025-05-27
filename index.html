@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Swiss Arabian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            localStorage.removeItem("loggedinUser");
+
+             //fixed product
+            let products = JSON.parse(localStorage.getItem('Products')) || [];
+            if (products.length === 0) {
+                const defaultProduct = [
+                    {
+                        ProductId: "product_1",
+                        SellerId: "user1",
+                        category: "For Her",
+                        image: "../image/p1.webp",
+                        name: "MUSK MALAKI",
+                        price: 550,
+                        quantity: 4
+                    },
+                    {
+                        ProductId: "product_2",
+                        SellerId: "user1",
+                        category: "For Her",
+                        image: "../image/p2.webp",
+                        name: "CASABLANCA",
+                        price: 610,
+                        quantity: 12
+                    },
+                    {
+                        ProductId: "product_3",
+                        SellerId: "user1",
+                        category: "For Her",
+                        image: "../image/p3.webp",
+                        name: "GHARAAM",
+                        price: 880,
+                        quantity: 8
+                    },
+                    {
+                        ProductId: "product_4",
+                        SellerId: "user1",
+                        category: "For Him",
+                        image: "../image/p4.webp",
+                        name: "GHARAAM OUD",
+                        price: 1100,
+                        quantity: 4
+                    }
+
+                ];
+
+                localStorage.setItem('Products', JSON.stringify(defaultProduct));
+            }
+        });//end
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Swiss Arabian</h1>
+    </header>
+    <nav>
+
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+    </nav>
+    <main>
+        <h2>About Us</h2>
+        <p>Explore the world of luxury with our exclusive products designed to suit your taste.</p>
+        <a href="landscape/landscape.html"><button>Get Started</button></a>
+    </main>
+</body>
+
+</html>

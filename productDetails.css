@@ -1,0 +1,23 @@
+.prodcutimg
+{
+width: 70%;
+height: 60vh;
+cursor: pointer;
+}
+.quantityInput
+{
+    width: 50px;;
+    background-color:rgb(252, 249, 245);;
+    border: none;
+    box-shadow: none;
+}
+.addtocart
+{
+    background-color:  rgb(141, 94, 38);
+  color:white;
+}
+.addtocart:hover
+ {
+  background-color: rgb(100, 65, 23);
+  color: white;
+ }

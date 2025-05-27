@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Your Profile Details</h1>
+    </header>
+    <nav>
+       <!-- <a href="index.html">Home</a> -->
+        <a href="login.html">Logout</a>
+    </nav>
+    <main>
+        <form id="sellerProfileForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" disabled>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="nationalId">National ID</label>
+            <input type="text" id="nationalId" name="nationalId" required>
+
+            <label for="bankAccount">Bank Account</label>
+            <input type="text" id="bankAccount" name="bankAccount" required>
+
+            <label for="password">New Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirmPassword">Confirm New Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+
+            <button type="submit">Save</button>
+
+            <div id="errorMessages" class="error-messages"></div>
+        </form>
+    </main>
+    <script src="sellerProfile.js"></script>
+</body>
+</html>

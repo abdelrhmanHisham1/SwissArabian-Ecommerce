@@ -1,0 +1,138 @@
+
+:root {
+    --primary-color: #5a3e36; 
+    --secondary-color: #d4af37; 
+    --background-color: #f5f3ef;
+    --text-color: #333; 
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+header {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+input, select, textarea, button {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

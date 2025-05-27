@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CryptoJS Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" defer></script>
+  <link rel="stylesheet" href="AccountSettings.css">
+  <link rel="stylesheet" href="SallerDashbord.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="CheckUserRole.js"></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="logo">
+      <img src="../image/logo3.png" alt="Logo">
+    </div>
+    <ul>
+      <li><a href="SallerDashbord.html" class="nav-link">Dashboard Home</a></li>
+      <li><a href="ManageProduct.html" class="nav-link">Manage Products</a></li>
+      <li><a href="ManageOrders.html" class="nav-link">Manage Orders</a></li>
+      <li><a href="SalesAnalytics.html" class="nav-link">Sales Analytics</a></li>
+      <li><a href="AccountSettings.html" class="nav-link">Account Settings</a></li>
+    </ul>
+    <div class="footer">
+      <p>&copy; 2024 Dashboard</p>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar-custom">
+    <button class="toggle-btn" id="toggle-btn">☰</button>
+    <h5>Welcome, Seller</h5>
+  </div>
+
+  <div class="main-content">
+      <form id="sellerProfileForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" disabled>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="nationalId">National ID</label>
+        <input type="text" id="nationalId" name="nationalId" required>
+
+        <label for="bankAccount">Bank Account</label>
+        <input type="text" id="bankAccount" name="bankAccount" required>
+
+        <label for="password">New Password</label>
+        <input type="password" id="password" name="password">
+
+        <label for="confirmPassword">Confirm New Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">UPDATE</button>
+          <button type="button" id="logoutButton" class="btn btn-danger">Logout</button>
+        </div>
+        <div id="errorMessages" class="error-messages"></div>
+      </form>
+    
+  </div>
+  <script src="AccountSettings.js"></script>
+</body>
+
+</html>
